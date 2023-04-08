@@ -1,4 +1,4 @@
-#импорты
+﻿#импорты
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import *
 from random import *
@@ -16,11 +16,13 @@ q1 = Question('Как называется интернет магазин ян�
 q2 = Question('Как называется этот проект?','Memory card','momery card','Нету названия','fqajy gznyflwfnm')
 q3 = Question('АК-...','105','74','М','СУ')
 q4 = Question('Устройства Эпл работают на...','IOS','linux','SteamOS','Windows')
+q5 = Questio('Что лучше?', 'балтика 9', 'кола', 'пепси', 'фанта'
 question_list = []
 question_list.append(q1)
 question_list.append(q2)
 question_list.append(q3)
 question_list.append(q4)
+question_list.append(q5)
 def next_question():
     Main_win.total +=1
     Cur_question = randint(0, len(question_list) -1)
